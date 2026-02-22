@@ -1,0 +1,24 @@
+[project]
+name = "claude-ollama-agent"
+version = "0.1.0"
+description = "Claude Agent SDK using Ollama models via LiteLLM proxy"
+readme = "README.md"
+requires-python = ">=3.10"
+
+dependencies = [
+    "claude-agent-sdk",
+    "litellm",
+    "litellm[proxy]",
+    "pyyaml>=6.0",
+    "httpx>=0.27.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff",
+    "pytest",
+]
+
+[tool.uv]
+# ensures uv uses modern resolution
+resolution = "highest"

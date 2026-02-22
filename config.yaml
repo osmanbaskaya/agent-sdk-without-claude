@@ -2,7 +2,8 @@ litellm_settings:
   drop_params: true
 
 model_list:
-  - model_name: ollama-qwen3
+  - model_name: "gemini-2.5-flash"
     litellm_params:
-      model: "ollama_chat/qwen3:8b"
-      api_base: "http://localhost:11434"
+      model: "gemini/gemini-2.5-flash"
+    model_info:
+      supports_function_calling: true
